@@ -32,12 +32,15 @@ After you start the API, i recommend you to test it first.
 To test this API, i recommend that you install [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/download). I personal use Insomnia but feel free to use whatever you want.
 
 ### API Resources:
+------
 - Item;
 - Store;
 - User;
 
 ### API Endpoints:
-#### Item Resource
+------
+### Item Resource
+------
 **Single Items**
 ```
 {your_url}/item/<string:name>
