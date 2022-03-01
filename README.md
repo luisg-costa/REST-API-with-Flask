@@ -27,7 +27,7 @@ py app.py
 
 ## Usage
 
-After you start the API, i recommend you to test it. 
+After you start the API, i recommend you to test it first. 
 
 To test this API, i recommend that you install [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/download). I personal use Insomnia but feel free to use whatever you want.
 
@@ -43,8 +43,20 @@ To test this API, i recommend that you install [Postman](https://www.postman.com
 {your_url}/item/<string:name>
 ```
 **HTTP Methods available:**
+
+| Method | Description |
+| --- | --- |
+| Get | Get an item by its name |
+| Post | Insert an item with its name in url, price and corresponding store_id in body request. Example of body:
+```
+{
+    "price":1.99,
+    "store_id": 1
+}
+``` |
+|||
 - Get - get an item by its name;
-- Post - insert an item with its name in url, price and corresponding store_id in body request. Example of body:
+- Post - Insert an item with its name in url, price and corresponding store_id in body request. Example of body:
 ```
 {
     "price":1.99,
@@ -62,21 +74,7 @@ To test this API, i recommend that you install [Postman](https://www.postman.com
 **HTTP Methods available:**
 - Get - get all items.
 
-#### Store Resource
-```
-{your_url}/item/<string:name>
-```
-**HTTP Methods available:**
-- Get - get an item by its name;
-- Post - insert an item with its name in url, price and corresponding store_id in body request. Example of body:
-```
-{
-    "price":1.99,
-    "store_id": 1
-}
-```
-- Delete - delete an item by its name;
-- Put - same as post. If this item not exists, it will be created.
+
 
 
 ## Contact
