@@ -12,14 +12,12 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = "sdfkdfsl23FSDvssfasf56332fdsdD"
-# to change authentication URL
+# to change authentication URL from /auth
 # app = config['JWT_AUTH_URL_RULE'] = '/login'
 
 # to change token expiration time
 # app.config['JWT_EXPIRATION_DELTA'] = timedelta(seconds=1800)
 
-# to change authentication key name
-# app.config['JWT_AUTH_USERNAME_KEY'] = 'email'
 
 api = Api(app)
 
@@ -29,15 +27,6 @@ def create_tables():
 
 jwt = JWT(app, authenticate, identity) # /auth
 
-"""
-# customize JWT auth response, include user_id in response body
-@jwt.auth_response_handler
-def customized_response_handler(access_token, identity):
-return jsonify({
-'access_token': access_token.decode('utf-8'),
-'user_id': identity.id
-})
-"""
 
 api.add_resource(Item,'/item/<string:name>') 
 api.add_resource(ItemList,'/items')
