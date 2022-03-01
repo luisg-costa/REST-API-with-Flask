@@ -10,7 +10,7 @@ REST API made with Flask (Python)
 
 ## General Information
 
-With this REST API you can get, post, update and delete data. To make this actions, you need to register and login. After login, it gives you a token which you need to send in you request header to get/post data.
+With this REST API you can get, post, update and delete data. To make this actions, you need to register and login. After login, it gives you a token which you need to send in your request header to get/post data.
 
 ## Setup
 To run this game, you need to download and unzip the code. If you don´t have python, you need to [install it first](https://www.python.org/downloads/).
