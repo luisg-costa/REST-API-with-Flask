@@ -13,23 +13,24 @@ REST API made with Flask (Python)
 With this REST API you can get, post, update and delete data. To make this actions, you need to register and login. After login, it gives you a token which you need to send in your request header to get/post data.
 
 ## Setup
-To run this game, you need to download and unzip the code. If you don´t have python, you need to [install it first](https://www.python.org/downloads/).
+To run this Rest API, you need to download and unzip the code. If you don´t have python, you need to [install it first](https://www.python.org/downloads/).
 
-Run a terminal command in game folder and run the follow command:
+Open a terminal command in API folder and run the follow command:
 ```
 pip install -r requirements.txt
 ```
 
 After you run this command to install all dependencies, you should run the follow command:
 ```
-py app.py
+python app.py
 ```
+Now you have a local server running which allow you test the API.
 
 ## Usage
 
 After you start the API, i recommend you to test it first. 
 
-To test this API, i recommend that you install [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/download). I personal use Insomnia but feel free to use whatever you want.
+To test this API, i recommend that you install [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/download). I use Insomnia but feel free to use whatever you want.
 
 ### API Resources:
 ------
@@ -133,5 +134,5 @@ In all requests you need do put the jwt token given to you in login. Example in 
 
 
 ## Contact
-Created by [Luís Costa](https://www.linkedin.com/in/lu%C3%ADs-costa-793a2414b/)
+If you have any question, feel free to [contact me](https://www.linkedin.com/in/lu%C3%ADs-costa-793a2414b/)
 
