@@ -36,11 +36,12 @@ To test this API, i recommend that you install [Postman](https://www.postman.com
 - Item;
 - Store;
 - User;
+- Auth (login to get JWT token);
 
 ### API Endpoints:
 ------
-#### Item Resource
-======
+### Item Resource
+
 **Single Items**
 ```
 {your_url}/item/<string:name>
@@ -64,6 +65,24 @@ To test this API, i recommend that you install [Postman](https://www.postman.com
 ```
 **HTTP Methods available:**
 - Get - get all items.
+
+### Store Resource
+
+**Single Store**
+```
+{your_url}/store/<string:name>
+```
+**HTTP Methods available:**
+- Get - get a store by its name;
+- Post - insert a store with its name in url request.
+- Delete - delete a store by its name;
+
+**Multiple Items**
+```
+{your_url}/stores
+```
+**HTTP Methods available:**
+- Get - get all stores.
 
 
 
