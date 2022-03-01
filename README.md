@@ -39,8 +39,8 @@ To test this API, i recommend that you install [Postman](https://www.postman.com
 
 ### API Endpoints:
 ------
-### Item Resource
-------
+#### Item Resource
+======
 **Single Items**
 ```
 {your_url}/item/<string:name>
