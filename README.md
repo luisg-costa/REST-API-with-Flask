@@ -37,8 +37,8 @@ To test this API, i recommend that you install [Postman](https://www.postman.com
 - User;
 
 ### API Endpoints:
- - #### Item Resource
-   - **Single Items**
+#### Item Resource
+**Single Items**
 ```
 {your_url}/item/<string:name>
 ```
@@ -55,7 +55,7 @@ To test this API, i recommend that you install [Postman](https://www.postman.com
 - Put - same as post. If this item not exists, it will be created.
 
 
-   - **Multiple Items**
+**Multiple Items**
 ```
 {your_url}/items
 ```
