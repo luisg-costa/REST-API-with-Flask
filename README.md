@@ -77,14 +77,59 @@ To test this API, i recommend that you install [Postman](https://www.postman.com
 - Post - insert a store with its name in url request.
 - Delete - delete a store by its name;
 
-**Multiple Items**
+**Multiple Stores**
 ```
 {your_url}/stores
 ```
 **HTTP Methods available:**
 - Get - get all stores.
 
+### User Resource
 
+**Single User**
+```
+{your_url}/user/<int:user_id>
+```
+**HTTP Methods available:**
+- Get - get an user by its id;
+- Delete - delete an user by its id;
+
+
+
+**User Register**
+```
+{your_url}/register
+```
+**HTTP Methods available:**
+- Post - create an user. you need to insert in body request an username and password for your account. Example of body request:
+
+´´´
+{
+    "username": "teste",
+    "password": "teste"
+}
+´´´
+
+### Auth Resource
+
+**Login**
+```
+{your_url}/auth
+```
+**HTTP Methods available:**
+- Post - login with your username and password to receive a JWT token. You need to put this token in all requests (except in Register and obviously for Login ) 
+Example of body request:
+´´´
+{
+    "username": "teste",
+    "password": "teste"
+}
+´´´
+
+**JWT Token**
+In all requests you need do put the jwt token given to you in login. Example in Insomnia:
+
+![image](https://user-images.githubusercontent.com/99747197/156261151-dea57e7b-730c-47fd-9e2e-71a8d4559a32.png)
 
 
 ## Contact
