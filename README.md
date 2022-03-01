@@ -37,26 +37,14 @@ To test this API, i recommend that you install [Postman](https://www.postman.com
 - User;
 
 ### API Endpoints:
-#### Item Resource
-**Single Items**
+ - #### Item Resource
+   - **Single Items**
 ```
 {your_url}/item/<string:name>
 ```
 **HTTP Methods available:**
-
-| Method | Description |
-| --- | --- |
-| Get | Get an item by its name |
-| Post | Insert an item with its name in url, price and corresponding store_id in body request. Example of body:
-```
-{
-    "price":1.99,
-    "store_id": 1
-}
-``` |
-|||
 - Get - get an item by its name;
-- Post - Insert an item with its name in url, price and corresponding store_id in body request. Example of body:
+- Post - insert an item with its name in url, price and corresponding store_id in body request. Example of body:
 ```
 {
     "price":1.99,
@@ -67,7 +55,7 @@ To test this API, i recommend that you install [Postman](https://www.postman.com
 - Put - same as post. If this item not exists, it will be created.
 
 
-**Multiple Items**
+   - **Multiple Items**
 ```
 {your_url}/items
 ```
