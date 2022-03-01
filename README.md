@@ -118,6 +118,7 @@ To test this API, i recommend that you install [Postman](https://www.postman.com
 {your_url}/auth
 ```
 **HTTP Methods available:**
+
 - Post - login with your username and password to receive a JWT token. You need to put this token in all requests (except in Register and obviously for Login ) 
 Example of body request:
 ´´´
@@ -128,6 +129,7 @@ Example of body request:
 ´´´
 
 **JWT Token**
+
 In all requests you need do put the jwt token given to you in login. Example in Insomnia:
 
 ![image](https://user-images.githubusercontent.com/99747197/156261151-dea57e7b-730c-47fd-9e2e-71a8d4559a32.png)
